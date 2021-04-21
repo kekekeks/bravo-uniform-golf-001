@@ -2,7 +2,6 @@ using System;
 using Avalonia;
 using Avalonia.Controls.ApplicationLifetimes;
 using Avalonia.ReactiveUI;
-using LibVLCSharp.Avalonia;
 
 namespace LibVLC_VideoView_Bug_Repro
 {
