@@ -39,39 +39,36 @@
               Grid.Row="0"
               Grid.Column="0"
               Grid.ColumnSpan="3" />
-      
+      <Panel Grid.Row="1" Grid.Column="0">
       <vlcSharp:VideoView x:Name="VideoView0"
           MediaPlayer="{Binding MediaPlayerZero, Mode=TwoWay}"
-          IsVisible="True"
-          Grid.Row="1"
-          Grid.Column="0" />
+          IsVisible="True"/>
+      </Panel>
+      <Panel Grid.Row="1" Grid.Column="1">
       <vlcSharp:VideoView x:Name="VideoView1"
           MediaPlayer="{Binding MediaPlayerOne, Mode=TwoWay}"
-          IsVisible="True"
-          Grid.Row="1"
-          Grid.Column="1" />
+          IsVisible="True" />
+      </Panel>
+      <Panel Grid.Row="1" Grid.Column="2">
       <vlcSharp:VideoView x:Name="VideoView2"
           MediaPlayer="{Binding MediaPlayerTwo, Mode=TwoWay}"
-          IsVisible="True"
-          Grid.Row="1"
-          Grid.Column="2" />
-      
-      <vlcSharp:VideoView x:Name="VideoView3"
-          MediaPlayer="{Binding MediaPlayerThree, Mode=TwoWay}"
-          IsVisible="True"
-          Grid.Row="2"
-          Grid.Column="0" />
+          IsVisible="True"/>
+      </Panel>
+      <Panel Grid.Row="2" Grid.Column="0">
+          <vlcSharp:VideoView x:Name="VideoView3"
+                              MediaPlayer="{Binding MediaPlayerThree, Mode=TwoWay}"
+                              IsVisible="True" />
+      </Panel>
+      <Panel Grid.Row="2" Grid.Column="1" >
       <vlcSharp:VideoView x:Name="VideoView4"
           MediaPlayer="{Binding MediaPlayerFour, Mode=TwoWay}"
-          IsVisible="True"
-          Grid.Row="2"
-          Grid.Column="1" />
+          IsVisible="True" />
+      </Panel>
+      <Panel Grid.Row="2" Grid.Column="2">
       <vlcSharp:VideoView x:Name="VideoView5"
           MediaPlayer="{Binding MediaPlayerFive, Mode=TwoWay}"
-          IsVisible="True"
-          Grid.Row="2"
-          Grid.Column="2" />
-
+          IsVisible="True"/>
+      </Panel>
     </Grid>
   
 

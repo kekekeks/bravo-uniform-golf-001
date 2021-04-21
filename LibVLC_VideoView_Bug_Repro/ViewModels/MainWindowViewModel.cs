@@ -7,6 +7,7 @@ using ReactiveUI;
 using MessageBox.Avalonia.Enums;
 using Avalonia.Controls;
 using System.Linq;
+using Avalonia.LogicalTree;
 
 namespace LibVLC_VideoView_Bug_Repro.ViewModels
 {
@@ -95,7 +96,7 @@ namespace LibVLC_VideoView_Bug_Repro.ViewModels
                 var media4 = new Media(LibVLC, new Uri("http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ElephantsDream.mp4"));
                 var media5 = new Media(LibVLC, new Uri("http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ElephantsDream.mp4"));
 
-                Controls allControls = theGrid.Children;
+                var allControls = theGrid.GetLogicalDescendants().OfType<VideoView>().ToList();
 
                 //allControls[allControls.IndexOf()]
                 var videoView0 = (VideoView)allControls.Single(control => control.Name == "VideoView0");
